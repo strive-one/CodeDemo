@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://d05n5e3g7vyug"]
+
+[ext_resource type="Script" path="res://HouseButton.cs" id="1_k7cwv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yb5aw"]
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y0i7j"]
+bg_color = Color(0.92549, 0.92549, 0.92549, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="HouseButton" type="Button"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 8.0
+offset_bottom = 8.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_yb5aw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y0i7j")
+toggle_mode = true
+script = ExtResource("1_k7cwv")
